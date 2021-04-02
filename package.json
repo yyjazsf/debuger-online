@@ -1,0 +1,34 @@
+{
+  "name": "debug-online",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "",
+    "test": "",
+    "release": "",
+    "version": "",
+    "docs": "",
+    "postinstall": ""
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint --fix",
+    "packages/**/bin/*": "eslint --fix"
+  },
+  "keywords": [
+    "debugger"
+  ],
+  "author": {
+    "name": "yingyujia",
+    "email": "yyjzry@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "lerna-changelog": "^1.0.1"
+  }
+}

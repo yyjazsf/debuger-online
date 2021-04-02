@@ -1,0 +1,21 @@
+{
+  "version": "0.0.1-beta.1",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {},
+  "packages": [
+    "packages/*"
+  ],
+  "changelog": {
+    "repo": "debug-online",
+    "labels": {
+      "PR: New Feature": ":rocket: New Features",
+      "PR: Breaking Change": ":boom: Breaking Changes",
+      "PR: Bug Fix": ":bug: Bug Fix",
+      "PR: Documentation": ":memo: Documentation",
+      "PR: Internal": ":house: Internal",
+      "PR: Underlying Tools": ":hammer: Underlying Tools"
+    },
+    "cacheDir": ".changelog"
+  }
+}

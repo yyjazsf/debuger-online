@@ -1,0 +1,12 @@
+.DS_Store
+design
+
+node_modules
+packages/test
+dist
+temp
+
+.version
+.changelog
+*.log
+package-lock.json
