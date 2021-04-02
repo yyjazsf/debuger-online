@@ -1,12 +1,16 @@
 .DS_Store
+Thumbs.db
+
+.cache
+*.log
+
 design
 
-node_modules
+node_modules/
 packages/test
 dist
 temp
 
 .version
 .changelog
-*.log
 package-lock.json
