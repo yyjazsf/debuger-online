@@ -1,4 +1,5 @@
-import * as io from "socket.io-client";
+// import * as io from "socket.io-client";
+const io = require('socket.io-client') 
 
 interface IOptions {
   url: string,
