@@ -11,8 +11,10 @@ export default {
     'jest',
   ],
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:jest/recommended',
+    // 'eslint:recommended',
+    // 'plugin:@typescript-eslint/recommended',
+    // 'plugin:jest/recommended',
+    'airbnb-typescript',
+    'prettier',
   ],
 };
