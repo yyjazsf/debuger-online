@@ -5,18 +5,22 @@ interface IOptions {
   url: string,
   socketOptions?: SocketIOClient.ConnectOpts,
   loginInfo: unknown,
+  plugins: unknown[],
   events: () => void
 }
 
 class DebuggerProvider {
   public socket: SocketIOClient.Socket;
+  private plugins: unknown[]
   private loginInfo: unknown;
 
   // https://socket.io/docs/v2/client-initialization/
   constructor(opts: IOptions) {
-    const { url, socketOptions, loginInfo  } = opts
+    const { url, socketOptions, loginInfo, plugins = []  } = opts
 
+    this.plugins = plugins
     this.loginInfo = loginInfo;
+
     this.socket = io(url, {
       transports: ["websocket"],
       autoConnect: false,
